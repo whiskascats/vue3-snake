@@ -200,6 +200,10 @@ const keycodeControl = (event: KeyboardEvent) => {
     case 'ArrowDown': //向下
       direction.value[1] !== -1 || snakeLength === 1 ? snake.directionControl([0,1]) : false
     break
+    case 'Escape':
+      clearInterval(interval);
+      router.push({ name: 'Start' })
+    break
   }
 }
 watch(() => score.value, (value) => {
