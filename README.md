@@ -1,40 +1,23 @@
-# vue-project
+# 貪吃蛇
 
-This template should help get you started developing with Vue 3 in Vite.
+### 好玩的貪吃蛇
+![image](https://hackmd.io/_uploads/ryy3025vT.png)
 
-## Recommended IDE Setup
+## Demo
+待補
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Introduction
+把原本舊的side-project改寫，原本是使用Vue2+JS，改成Vue3+TS，有用到pinia、VueUse，並嘗試學習公司專業的資深切版工程師的樣式處理習慣，把scss分成base、components、latout、plugins四個資料夾，有裝bootstrap5，但最後還是自己刻樣式，雖然舊版有設計在手機上使用的功能，新版沒有因為懶了。
 
-## Type Support for `.vue` Imports in TS
+## Skills & Library
+* HTML
+* SCSS
+* TypeScript
+* Vue3
+* Vite
+* pinia
+* VueUse
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
+## note
+* 是不是要做手機也可以玩?
+* 要更炫泡
