@@ -23,12 +23,12 @@ const routes: Array<RouteRecordRaw> = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(process.env.BASE_URL),
   routes
 })
 
 router.beforeEach(async (to, from, next) => {
-  window.document.title = to.meta.title
+  window.document.title = to.meta.title as string
   next();
 });
 

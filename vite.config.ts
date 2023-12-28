@@ -16,5 +16,11 @@ export default defineConfig({
   server: {
     port: 8080,
     host: '0.0.0.0'
-  }
+  },
+  base: process.env.NODE_ENV === 'production' ? '/vue3-snake/': '/',  
+  define: {
+    'process.env': {
+      'BASE_URL': process.env.NODE_ENV === 'production' ? '/vue3-snake/': '/',  
+    }
+  },
 })

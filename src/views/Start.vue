@@ -13,8 +13,8 @@ import { useRouter } from 'vue-router';
 
 const router = useRouter()
 
-const start = (event: any) => {
-  if(event.keyCode === 32) {
+const start = (event: KeyboardEvent) => {
+  if(event.code === 'Space') {
     router.push({ name: 'Game' })
   }
 }
