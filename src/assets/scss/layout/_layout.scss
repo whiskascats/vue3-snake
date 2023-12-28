@@ -1,0 +1,176 @@
+// *************************************
+//
+//  Layout: global layout setting
+//
+// *************************************
+
+html,
+body {
+  font-size: $font-size-base;
+  font-family: $font-family-base;
+  color: $color-white;
+}
+.wrapper>.start {
+  width: 100%;
+  min-height: 100vh;
+  background: url('@/assets/images/bg-start.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    position: relative;
+    color: $color-white;
+    font-size: 2.25rem;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%)
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%)
+    }
+  }
+  p {
+    font-size: 1.5rem;
+    color: $color-cyan;
+    span {
+      animation: neon 1.5s linear infinite;
+      animation-timing-function: steps(2, jump-none);
+    }
+  }
+}
+.wrapper>.game {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  position: relative;
+  .board {
+    background-color: $color-denim;
+    position: relative;
+    .rows {
+      display: flex;
+      .grid {
+        div {
+          border: 1px solid $color-grid-line;
+          background-position: cover;
+          width: 30px;
+          height: 30px;
+        }
+        &.food-img{
+          background: url('@/assets/images/ic-point.png') center center;
+        }
+      }
+    }
+    .words {
+      position: absolute;
+      font-size: 2.25rem;
+      &.lt{
+        transform: rotate(-90deg) translate(0%, -200%);
+        top: 0;
+        left: 10px;
+      }
+      &.tl{
+        transform: translate(0%, -100%);
+        top: 0;
+        left: 0;
+      }
+      &.rb{
+        transform: rotate(90deg) translate(0%, -200%);
+        bottom: 0;
+        right: 10px;
+      }
+      &.br{
+        transform: rotate(180deg) translate(0%, -100%);
+        bottom: 0;
+        right: 0;
+      }
+    }
+    .best {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transform: translate(0, 100%);
+      display: flex;
+      align-items: center;
+    }
+    .score {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(0, -100%);
+      display: flex;
+      align-items: center;
+    }
+    .point {
+      font-size: 2.25rem;
+    }
+  }
+  
+}
+.wrapper>.game-over {
+  width: 100%;
+  min-height: 100vh;
+  background: url('@/assets/images/bg-start.png') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    position: relative;
+    color: $color-white;
+    font-size: 2.25rem;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      left: -60px;
+      top: 50%;
+      transform: translateY(-50%)
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      right: -60px;
+      top: 50%;
+      transform: translateY(-50%)
+    }
+  }
+  .score {
+    font-size: 2.25rem;
+  }
+  .restart {
+    font-size: 1.75rem;
+    color: $color-black;
+    background-color: $color-white;
+    padding: .5rem;
+  }
+  .continue {
+    display: flex;
+    align-items: center;
+    margin-top: 2.5rem;
+    justify-content: space-between;
+    color: $color-cyan;
+    font-size: 1.4rem;
+  }
+}
