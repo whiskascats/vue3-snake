@@ -1,7 +1,7 @@
 # 貪吃蛇
 
 ### 好玩的貪吃蛇
-![upload_cb2187ac4dbdafafe62a33e9cd7228ff](https://hackmd.io/_uploads/Skv3BiiwT.png)
+![](https://whiskascats.github.io/vue3-snake/images/md_image.png)
 
 
 ## Demo
